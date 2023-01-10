@@ -28,6 +28,7 @@ if (process.env.SKIP_LOAD !== 'true') {
   }
 }
 
+//hardfork update
 const HARDFORK = 'london';
 
 const MNEMONIC_PATH = "m/44'/60'/0'/0";
@@ -58,6 +59,7 @@ const forkUrl = {
   gnosis: NETWORKS_RPC_URL[GnosisNetwork.gnosis],
 };
 
+//forking 
 const forking = FORK
   ? {
       url: forkUrl[FORK_NETWORK],
