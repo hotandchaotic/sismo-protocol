@@ -106,7 +106,7 @@ describe('Test E2E Protocol', () => {
     [deployer, , proxyAdminSigner, pythia1destinationSigner] = signers;
     chainId = parseInt(await hre.getChainId());
     poseidon = await buildPoseidon();
-
+//do we need additional wait
     // 1 - Init commitment mapper and commitment signer
     commitmentMapper = await CommitmentMapperTester.generate();
     commitmentMapperPubKey = await commitmentMapper.getPubKey();
